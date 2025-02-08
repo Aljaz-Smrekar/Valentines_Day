@@ -56,6 +56,11 @@ function displayCat() {
     };
 }
 
+function playMusic() {
+    let audio = Audio("Happy.mp3");
+    audio.play().catch(error => console.log("Autoplay failed:", error));
+}
+
 // Function to display the cat-heart.gif
 function displayCatHeart() {
     // Clear existing content in the image container
@@ -73,6 +78,8 @@ function displayCatHeart() {
         imageContainer.appendChild(catHeartImage);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
+
+        playMusic()
     };
 }
 
