@@ -79,7 +79,7 @@ function displayCatHeart() {
         // Hide the options container
         document.getElementById('options').style.display = 'none';
 
-        playMusic()
+        playMusic();
     };
 }
 
