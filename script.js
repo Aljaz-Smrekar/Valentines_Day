@@ -57,7 +57,7 @@ function displayCat() {
 }
 
 function playMusic() {
-    let audio = Audio("Happy.mp3");
+    let audio = new Audio("Happy.mp3");
     audio.play().catch(error => console.log("Autoplay failed:", error));
 }
 
