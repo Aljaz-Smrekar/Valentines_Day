@@ -1,5 +1,12 @@
 // script.js
 
+
+function playMusic() {
+    console.log("Playing music..."); // Debugging line
+    let audio = new Audio("Happy.mp3");
+    audio.play().catch(error => console.log("Autoplay failed:", error));
+}
+
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
@@ -54,11 +61,6 @@ function displayCat() {
     catImage.onload = function() {
         imageContainer.appendChild(catImage);
     };
-}
-
-function playMusic() {
-    let audio = new Audio("Happy.mp3");
-    audio.play().catch(error => console.log("Autoplay failed:", error));
 }
 
 // Function to display the cat-heart.gif
