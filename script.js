@@ -85,9 +85,9 @@ function displayCatHeart() {
     };
 }
 
-document.addEventListener("click", function() {
-    playMusic();
-}, { once: true });
+// document.addEventListener("click", function() {
+//     playMusic();
+// }, { once: true });
 
 // Display the cat.gif initially
 displayCat();
