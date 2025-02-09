@@ -2,11 +2,15 @@
 
 
 function playMusic() {
-    console.log("Playing music..."); // Debugging line
     let audio = new Audio("Happy.mp3");
     audio.play().catch(error => console.log("Autoplay failed:", error));
 }
 
+function sadMusic() {
+    let audio = new Audio("Meow.mp3");
+    audio.play().catch(error => console.log("Autoplay failed:", error));
+
+}
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
@@ -20,6 +24,7 @@ function selectOption(option) {
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
         document.getElementById('no-button').innerText = 'You sure?'; 
+        sadMusic()
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
