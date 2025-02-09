@@ -7,8 +7,8 @@ function playMusic() {
 }
 
 function sadMusic() {
-    let audio = new Audio("Meow.mp3");
-    audio.play().catch(error => console.log("Autoplay failed:", error));
+    let sadAudio = new Audio("Meow.mp3");
+    sadAudio.play().catch(error => console.log("Autoplay failed:", error));
 
 }
 // Function to handle button click events
