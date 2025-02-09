@@ -15,6 +15,7 @@ function selectOption(option) {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
+            playMusic();
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
@@ -80,8 +81,6 @@ function displayCatHeart() {
         imageContainer.appendChild(catHeartImage);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
-
-        playMusic();
     };
 }
 
